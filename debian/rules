@@ -1,0 +1,7 @@
+#!/usr/bin/make -f
+
+%:
+	dh ${@} --with phpcomposer
+
+override_dh_auto_build:
+	phpab --tolerant --output src/autoload.php src

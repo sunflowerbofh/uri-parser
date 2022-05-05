@@ -1,0 +1,5 @@
+thephpleague-uri-parser (1.4.1-1) unstable; urgency=medium
+
+  * Initial release (Closes: #1012445).
+
+ -- Katharina Drexel <katharina.drexel@bfh.ch>  Thu, 05 May 2022 10:50:15 +0200

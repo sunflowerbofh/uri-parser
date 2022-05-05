@@ -1,0 +1,32 @@
+Source: thephpleague-uri-parser
+Section: php
+Priority: optional
+Maintainer: Katharina Drexel <katharina.drexel@bfh.ch>
+Build-Depends:
+ debhelper-compat (= 13),
+ phpab,
+ pkg-php-tools,
+Standards-Version: 4.6.1
+Homepage: https://uri.thephpleague.com
+Vcs-Browser: https://github.com/thephpleague/uri-parser
+Vcs-Git: https://github.com/sunflowerbofh/uri-parser.git
+Rules-Requires-Root: no
+
+Package: php-league-uri-parser
+Architecture: all
+Depends:
+ ${misc:Depends},
+ ${phpcomposer:Debian-require},
+Suggests:
+ ${phpcomposer:Debian-suggest},
+Replaces:
+ ${phpcomposer:Debian-replace},
+Breaks:
+ ${phpcomposer:Debian-conflict},
+Provides:
+ ${phpcomposer:Debian-provide},
+Description: ${phpcomposer:description}
+ League Uri Parser has:
+  * a PHPUnit test suite
+  * a coding style compliance test suite using PHP CS Fixer.
+  * a code analysis compliance test suite using PHPStan.
